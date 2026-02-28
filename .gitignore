@@ -1,23 +1,31 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Зависимости
+node_modules/
+package-lock.json
+yarn.lock
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Сборка React
+build/
+dist/
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
+# Файлы окружения
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Логи
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
